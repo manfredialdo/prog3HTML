@@ -4,24 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+    <title>Food Store</title>
 </head>
 
 <body>
-    <h2>Lista no ordenada</h2>
-    <ul>
-        <li>Manzana</li>
-        <li>Banana</li>
-        <li>Uva</li>
-    </ul>
+    <header>
+        <h1 class="title">Food Store</h1>
+        <p>Comida casera..</p>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="pedidos.html">Mis pedidos</a> |
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
 
-    <h2>Lista ordenada</h2>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ol>
+    <hr>
+    <hr>
+    <hr>
+    <h2>Menu</h2>
+    <hr>
+    <hr>
 
+    <aside>
+        <h3>Categorías</h3>
+        <ul>
+            <li><a href="#comida">Comidas</a></li>
+            <li><a href="#bebida">Bebidas</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        <section id="buscador">
+            <form>
+                <label for="buscar">Buscar producto:</label>
+                <input type="text" id="buscar" name="buscar" placeholder="Ej: Empanada...">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section id="comida">
+            <h2>Nuestra Grilla de Productos</h2>
+
+            <article>
+                <img src="https://uploads.onecompiler.io/43w3pcqzf/44h3hag9j/chori.jpg" alt="Clásico choripán argentino con chimichurri casero en Food Store" title="el choripán de la casa, un clasico" width="150" height="150">
+                <h3>Choripán</h3>
+                <p>un clásico argentino: pan, chorizo de cerdo y chimi.</p>
+                <p>Precio: <strong>$1500</strong></p>
+                <button type="button">Agregar</button>
+            </article>
+
+            <br>
+
+            <article>
+                <img src="https://uploads.onecompiler.io/43w3pcqzf/44h3hag9j/empanada.jpg" alt="Foto de Empanada"> alt="las empanadas de Food Store " title="la empanada de la casa, con carne cortada a cuchillo" width="150" height="150">
+
+                <h3>Empanada</h3>
+                <p>Empanada salteña de carne cortada a cuchillo, frita y a leña.</p>
+                <p>Precio: <strong>$800</strong></p>
+                <button type="button">Agregar</button>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="bebida">
+            <h2>Bebidas (Tabla de precios)</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Vino con Soda</td>
+                        <td>Tinto de la casa y sifón de 1/2 litro.</td>
+                        <td><strong>$1200</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Food Store · Aldo Manfredi</p>
+        <a href="https://github.com/manfredialdo/UTN-TUPaD-P3">Repositorio</a>
+    </footer>
 </body>
 
 </html>
