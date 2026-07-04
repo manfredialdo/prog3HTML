@@ -1,0 +1,38 @@
+{
+  "name": "Mi Primer Entorno Web Seguro Automatizado",
+  
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "pnpmVersion": "latest"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-edgedevtools.vscode-edge-devtools", 
+        "esbenp.prettier-vscode",               
+        "formulahendry.auto-rename-tag"         
+      ],
+      "settings": {
+        "editor.formatOnSave": true,            
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "files.autoSave": "afterDelay",         
+        "files.autoSaveDelay": 1000
+      }
+    }
+  },
+  "postStartCommand": "pnpm dlx serve . --port 3000 &",
+
+  // Apuntamos al puerto seguro 3000
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Vista Previa de mi Web",
+      "onAutoForward": "openPreview", // <--- Esto abre el visor al lado del código SOLO
+      "visibility": "private"
+    }
+  }
+}
