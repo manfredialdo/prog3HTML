@@ -1,6 +1,6 @@
 
 04_medios_y_enlaces.html
-```mermaid
+mermaid
 flowchart TD
     HTML["html (lang=es)"] --> HEAD["head"]
     HTML --> BODY["body"]
