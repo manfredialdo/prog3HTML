@@ -1,8 +1,5 @@
 
-
 # 🌐 Entornos de Desarrollo Blindados (Codespaces + Docker)
-
-
 
 ## 💡 La Idea
 Este proyecto demuestra cómo eliminar por completo la fricción del onboarding técnico en startups y agencias. En lugar de pasar horas configurando herramientas locales, creamos **Entornos como Código (EaC)** listos para usar en la nube a través de GitHub Codespaces, totalmente configurados y protegidos.
@@ -22,14 +19,12 @@ Una vez en tu fork, haz clic en el botón verde **Code**, selecciona la pestaña
 > ⚡ *El entorno tardará un minuto en construirse la primera vez ya que descarga el contenedor de Docker y las extensiones de productividad automáticamente.*
 
 ### 3. ¡Listo para programar!
-* Abre cualquier archivo HTML (como `index.html`) en el editor.
+* Abre cualquier archivo HTML (como `04_medios_y_enlaces.html`) en el editor.
 * Gracias a la automatización del archivo `.devcontainer.json`, **evitamos por completo el uso de la extensión Live Server**. El entorno levantará un servidor web real en segundo plano y te abrirá la vista previa automáticamente a la derecha de tu pantalla.
 
 ---
 
-## 🛠️ Ejecución Manual (Opcional)
-
-Si por alguna razón cierras la vista previa o deseas levantar el servidor web de forma manual en cualquier otra carpeta desde la terminal de Codespaces, simplemente párate en el directorio del archivo y ejecuta:
+## 🏗️ Estructura del Documento HTML
 
 ```mermaid
 flowchart TD
@@ -63,58 +58,3 @@ flowchart TD
     %% Estilos opcionales
     classDef tag fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
     class HTML,HEAD,BODY,META,TITLE,H1,H2Img,IMG,H2Vid,VID,SRCVid,H2Aud,AUD,SRCAud,H2Link,P1,A1,P2,A2 tag;
-
-
-
-
-
-```bash
-pnpm dlx serve . --port 3000
-
-
-
-
-
-# idea
-
-vender entornos virtuales 
-
-## 🚀 Cómo utilizar el curso
-
-como ejecutar el proyecto 
-
-hace un fork a mi proyecto
-
-evitamos el uso de instalar la extensión **Live Server**.
-
-abri el html en el editor
-
-ejecuta en terminal 
-pnpm dlx serve . --port 3000
-
-
-
-# Curso HTML desde Cero 🎓
-
-Este repositorio contiene los archivos correspondientes a cada clase del curso en video **"HTML desde Cero"**. Cada archivo HTML representa lo que se construyó en cada video. Ideal para quienes siguen el curso paso a paso.
-
----
-
-## 🚀 Cómo utilizar el curso
-
-1. Clona este repositorio o descarga los archivos.
-2. Abre la carpeta en VSCode.
-3. Instala la extensión **Live Server**.
-4. Abre cada archivo `index.html` con Live Server para seguir el curso.
-
----
-
-> Este curso está pensado para personas que se inician en el desarrollo web. Al finalizar vas a tener una base sólida en HTML y estructura de páginas web.
-
-
-
-
-
-
-
-
