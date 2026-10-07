@@ -1,38 +1,4 @@
 
-04_medios_y_enlaces.html
-mermaid
-flowchart TD
-    HTML["html (lang=es)"] --> HEAD["head"]
-    HTML --> BODY["body"]
-
-    %% Contenido de head
-    HEAD --> META["meta (charset=UTF-8)"]
-    HEAD --> TITLE["title: Medios y Enlaces"]
-
-    %% Contenido de body
-    BODY --> H1["h1: Ejemplo de Medios en HTML"]
-    
-    BODY --> H2Img["h2: Imagen"]
-    BODY --> IMG["img (src=./assets/imagen.png)"]
-
-    BODY --> H2Vid["h2: Video"]
-    BODY --> VID["video (controls)"]
-    VID --> SRCVid["source (video/mp4)"]
-
-    BODY --> H2Aud["h2: Audio"]
-    BODY --> AUD["audio (controls)"]
-    AUD --> SRCAud["source (audio/mp3)"]
-
-    BODY --> H2Link["h2: Enlaces"]
-    BODY --> P1["p"]
-    P1 --> A1["a (href=google.com)"]
-    BODY --> P2["p"]
-    P2 --> A2["a (href=google.com, target=_blank)"]
-
-    %% Estilos opcionales
-    classDef tag fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
-    class HTML,HEAD,BODY,META,TITLE,H1,H2Img,IMG,H2Vid,VID,SRCVid,H2Aud,AUD,SRCAud,H2Link,P1,A1,P2,A2 tag;
-
 
 # 🌐 Entornos de Desarrollo Blindados (Codespaces + Docker)
 
